@@ -52,3 +52,24 @@ const members = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 for (let member of members) {
     console.log(member.toUpperCase());
 }
+
+
+// METHODS, REVISITED
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 
+'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 
+'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 
+'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 
+'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 
+'Imitation of Life', 'Snatch', 'Fast and Furious'];
+
+console.log(favMovies[8]);
+favMovies.sort();  // puts array in alphabetical order A - Z
+favMovies.pop();    // removes 'Voler'
+favMovies.push("Guardians of the Galaxy"); // adds "Guardians of the Galaxy" to the end of list
+favMovies.reverse();    // reverses array
+favMovies.shift();  // removes first item in array
+favMovies.splice(14, 1, "Avatar");  // removes index 14 and replaces it with "Avatar"
+const removedSplice = favMovies.splice(-(favMovies.length/2));  // removes half of the array and saves it to variable
+console.log(removedSplice); 
+console.log(favMovies);
+console.log(removedSplice[4]);
