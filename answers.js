@@ -51,7 +51,7 @@ console.log(wolfy);
 const members = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 for (let member of members) {
     console.log(member.toUpperCase());
-}
+};
 
 
 // METHODS, REVISITED
@@ -92,5 +92,13 @@ for (let i = 1; i <= 20; i++){
         console.log(random[Math.floor(Math.random()*3)]);
     } else {
         console.log(i);
-    }
-}
+    };
+};
+
+// FIND THE MEDIAN
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+nums.sort();
+console.log(nums[Math.floor(nums.length/2)]);
+
+const nums2 = [0, 1, 2, 3, 4, 5, 6];
+console.log(nums2[Math.floor(nums2.length/2)]);
