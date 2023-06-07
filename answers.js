@@ -73,3 +73,14 @@ const removedSplice = favMovies.splice(-(favMovies.length/2));  // removes half 
 console.log(removedSplice); 
 console.log(favMovies);
 console.log(removedSplice[4]);
+
+
+// WHERE IS WALDO
+const whereIsWaldo = [["Timmy", "Frank"], 
+"Eggbert",
+["Lucinda", "Jacc", "Neff", "Snoop"],
+["Petunia", ["Baked Goods", "Waldo"]]];
+
+whereIsWaldo.splice(1, 1); // goes to index 1 and removes 1 item
+whereIsWaldo[1][2] = "No One";
+console.log(whereIsWaldo);
