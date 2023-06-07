@@ -99,6 +99,46 @@ for (let i = 1; i <= 20; i++){
 const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
 nums.sort();
 console.log(nums[Math.floor(nums.length/2)]);
-
-const nums2 = [0, 1, 2, 3, 4, 5, 6];
+/* test problem
+const nums2 = [0, 1, 2, 3, 4];
 console.log(nums2[Math.floor(nums2.length/2)]);
+*/
+
+
+// HUNGRY FOR MORE?
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "Per Scholas hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomasCloset = [
+    [
+        // These are Thom's shirts
+        "grey button-up",
+        "dark grey button-up",
+        "light blue button-up",
+        "blue button-up"
+    ], [
+        // These are Thom's pants
+        "grey jeans",
+        "jeans",
+        "PJs"
+    ], [
+        // Thom's accessories
+        "wool mittens",
+        "wool scarf",
+        "raybans"
+    ]
+];
+
+const kristynsShoe = kristynsCloset.splice(1, 1);
+console.log(kristynsShoe);
+thomasCloset[2].push(kristynsShoe);
+console.log(kristynsCloset);
+console.log(thomasCloset);
