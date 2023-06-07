@@ -45,3 +45,10 @@ console.log(dart);
 wolfy.shift();
 wolfy.unshift("Gameboy");
 console.log(wolfy);
+
+
+// YELL AT THE NINJA TURTLES
+const members = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+for (let member of members) {
+    console.log(member.toUpperCase());
+}
