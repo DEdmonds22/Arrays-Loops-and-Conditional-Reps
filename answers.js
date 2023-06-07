@@ -84,3 +84,13 @@ const whereIsWaldo = [["Timmy", "Frank"],
 whereIsWaldo.splice(1, 1); // goes to index 1 and removes 1 item
 whereIsWaldo[1][2] = "No One";
 console.log(whereIsWaldo);
+
+// EXCITED KITTEN
+for (let i = 1; i <= 20; i++){
+    random = ["...human...why you taking pictures of me", "...the catnip made me do it...", "...why does the red dot alway..."];
+    if (i % 2 === 0){
+        console.log(random[Math.floor(Math.random()*3)]);
+    } else {
+        console.log(i);
+    }
+}
